@@ -51,10 +51,20 @@ cp example/.dockerignore ./[:poject_folder]
 cp example/[:solution]/Dockerfile ./[:poject_folder]
 ```
 
-### Turn off comping .env.sample to .env if there is not configuration file in yout project
+### Turn off copying .env.sample to .env if there is not configuration file in yout project
 comment the following line: COPY .env /app/.env
 ```
 vim Dockerfile
+```
+
+### Change node version for old codebase (optional)
+e.g. change 
+```
+FROM node:lts as build-stage 
+```
+to
+```
+FROM node:14 as build-stage
 ```
 
 ### Login to Docker hub as well
