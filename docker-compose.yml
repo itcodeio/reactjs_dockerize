@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nextjs:
+    container_name: reactjs
+    image: ${REACTJS_DOCKER_REPOSITORY}
+    restart: always
+    ports:
+      - 80:80
