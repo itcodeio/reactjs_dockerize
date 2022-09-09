@@ -13,7 +13,7 @@ sudo chown $USER /var/run/docker.sock
 ### Login to Docker hub
 docker login -u itcode -p [password]
 
-### Variant A. Clone GIT repository
+### [Variant A] Clone GIT repository
 ```
 mkdir /home/ubuntu/srv
 cd /home/ubuntu/srv
@@ -36,7 +36,7 @@ REACTJS_DOCKER_REPOSITORY=itcode/[projectname]:[tagname]
 docker-compose up -d --build --force-recreate
 ```
 
-### Variant B. Run docker container directly without clonning repository
+### [Variant B] Run docker container directly without clonning repository
 ```
 docker run -d -p 80:80 itcode/[projectname]:[tagname]
 ```
