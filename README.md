@@ -49,6 +49,7 @@ Copy files from example folder to your project folder.
 ```
 cp example/.dockerignore ./[:poject_folder]
 cp example/[:solution]/Dockerfile ./[:poject_folder]
+cp -R nginx/ ./[:poject_folder]
 ```
 
 ### Turn off copying .env.sample to .env if there is not configuration file in yout project
